@@ -102,7 +102,6 @@ views/public/music/
 *.pid
 *.key
 *.ini
-*.json
 *.yaml
 *.yml
 *.env
