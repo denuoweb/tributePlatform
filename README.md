@@ -1,7 +1,7 @@
 
-# Tribute Website for [Musician's Name]
+# Tribute Website for Naoto Sekiguchi
 
-This project is a Single Page Application (SPA) built using the Mountaineer framework for the backend and React for the frontend. It features a continuous music player and sections including Home, Art, Dedication, and Login.
+This project is a Single Page Application (SPA) built using the Mountaineer framework for the backend and React for the frontend. It features a continuous music player and sections including Home, Art, Dedication, and Book.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This project is a Single Page Application (SPA) built using the Mountaineer fram
 Clone the repository and navigate into the project directory:
 
 ```bash
-git clone https://github.com/denuoweb/tribute-website.git
+git clone https://github.com/denuoweb/tributePlatform.git
 cd tribute-website
 ```
 
