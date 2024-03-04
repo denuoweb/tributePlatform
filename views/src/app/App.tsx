@@ -39,6 +39,9 @@ function App() {
           <MusicControls />
           {renderSection()}
         </div>
+        <footer style={{ marginTop: '20px', textAlign: 'center', padding: '10px 0' }}>
+          Made using Python and React using <a href="https://github.com/piercefreeman/mountaineer" target="_blank" rel="noopener noreferrer">Mountaineer</a> 🏔️
+        </footer>
       </MusicPlayerProvider>
     </div>
   );

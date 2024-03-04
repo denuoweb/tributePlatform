@@ -1,25 +1,149 @@
 /* views/src/style.css */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Light grey background for the whole page */
-    color: #333;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Centers the app container horizontally */
-    padding: 20px; /* Adds some space around the app container */
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Light grey background for the whole page */
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers the app container horizontally */
+  padding: 20px; /* Adds some space around the app container */
+}
 
-  .app-container {
-    background-color: #fff; /* White background for the app content */
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    max-width: 800px; /* Or any max-width or width you prefer */
-    margin: 20px; /* Adjust based on your design */
-    padding: 20px; /* Padding inside the app container */
-    width: 100%; /* Ensures it takes up full width up to max-width */
-  }
-  
-  .home-container {
+.app-container {
+  background-color: #fff; /* White background for the app content */
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 800px; /* Or any max-width or width you prefer */
+  margin: 20px; /* Adjust based on your design */
+  padding: 20px; /* Padding inside the app container */
+  width: 100%; /* Ensures it takes up full width up to max-width */
+}
+
+.home-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007B9E;
+}
+
+.music-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* Creates space between elements */
+}
+
+.now-playing {
+  font-weight: bold;
+  margin-bottom: 10px; /* Adds some space below the Now Playing text */
+}
+
+.button, .download-link {
+  font-family: 'Arial', sans-serif;
+  padding: 10px 15px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px; /* Adjusts spacing around buttons */
+}
+
+.button:hover, .download-link:hover {
+  background-color: #007B9E;
+}
+
+
+nav {
+  margin-bottom: 20px;
+}
+
+.book-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.book-title, .dedication-title, .parent-bio h2 {
+  color: #007BFF;
+  text-align: center;
+  font-size: 26px; /* Adjust this value as needed */
+}
+
+
+.book-subtitle, .dedication-subtitle {
+  color: #555;
+  text-align: center;
+}
+
+.book-description {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.book-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.home-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.bio-section, .cd-section {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.bio-image, .cd-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.track-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.track-list li {
+  margin-bottom: 10px;
+}
+
+
+.dedication-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -27,103 +151,73 @@ body {
     color: #333;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
+  
+.song-dedications {
+  margin-top: 40px;
+}
 
-  button {
-    background-color: #008cba;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #007B9E;
+.song {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.song h3 {
+  color: #0056b3;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.music-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Adjusting for smaller screens */
+@media (max-width: 600px) {
+  body {
+      flex-direction: column;
+      padding: 10px;
   }
 
-  .music-controls {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px; /* Creates space between elements */
+  .app-container,
+  .home-container,
+  .book-container,
+  .dedication-container {
+      margin: 10px 0;
+      width: auto; /* Allows containers to expand to fit smaller screens */
   }
-  
-  .now-playing {
-    font-weight: bold;
-    margin-bottom: 10px; /* Adds some space below the Now Playing text */
-  }
-  
-  .button, .download-link {
-    font-family: 'Arial', sans-serif;
-    padding: 10px 15px;
-    background-color: #008cba;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px; /* Adjusts spacing around buttons */
-  }
-  
-  .button:hover, .download-link:hover {
-    background-color: #007B9E;
-  }
-  
 
-  nav {
-    margin-bottom: 20px;
+  .music-controls, nav {
+      flex-direction: column;
   }
-  
-  .book-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
+
   .book-title, .dedication-title, .parent-bio h2 {
-    color: #007BFF;
-    text-align: center;
-    font-size: 26px; /* Adjust this value as needed */
+      font-size: 20px; /* Smaller font size for smaller screens */
   }
 
-  
-  .book-subtitle, .dedication-subtitle {
-    color: #555;
-    text-align: center;
+  .book-images, .song {
+      flex-direction: column;
   }
-  
-  .book-description {
-    text-align: justify;
-    line-height: 1.6;
+
+  .book-image, .bio-image, .cd-image {
+      max-width: 90%; /* Allows images to resize within their containers */
+      margin: 10px auto; /* Centers images */
   }
-  
-  .book-images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .book-image {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .home-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .bio-section, .cd-section {
-    margin-bottom: 40px;
-  }
-  
-  h1, h2 {
-    color: #333;
+
+  .now-playing, .button, .download-link {
+      margin: 10px auto; /* Ensures buttons and text are centered and have margin on smaller screens */
   }
   
   .bio-image, .cd-image {
@@ -132,53 +226,4 @@ body {
     display: block;
     margin: 20px auto;
   }
-  
-  .track-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .track-list li {
-    margin-bottom: 10px;
-  }
-  
-
-  .dedication-container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background-color: #fff;
-      color: #333;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-  .song-dedications {
-    margin-top: 40px;
-  }
-  
-  .song {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .song h3 {
-    color: #0056b3;
-  }
-  
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  
-  .music-controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
+}

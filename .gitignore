@@ -133,3 +133,4 @@ views/public/music/
 # Custom additions for this project
 views/_static/*
 views/node_modules/*
+views/package-lock.json
