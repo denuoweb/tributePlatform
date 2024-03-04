@@ -19,7 +19,6 @@ Thumbs.db
 .vscode/
 
 # User-specific content
-views/public/images/
 views/public/music/
 
 # Build output
@@ -33,7 +32,6 @@ views/public/music/
 *.pid
 *.key
 *.ini
-*.json
 *.yaml
 *.yml
 *.env
@@ -135,5 +133,4 @@ views/public/music/
 
 # Custom additions for this project
 views/_static/*
-views/public/*
 views/node_modules/*
