@@ -65,6 +65,11 @@ The application's main sections are accessible from the homepage. Interact with 
 
 Contributions are welcome. Please fork the repository and submit pull requests with any enhancements.
 
+### To Fix
+
+- Adding template to bottom of existing file.
+- view_path path issues extra /view/app 
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
