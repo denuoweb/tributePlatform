@@ -3,7 +3,7 @@ from controllers.home import HomeController
 from controllers.art import ArtController
 from controllers.dedication import DedicationController
 from controllers.book import BookController
-from mountaineer.js_compiler.postcss import PostCSSBundler
+from mountaineer.client_compiler.postcss import PostCSSBundler
 
 controller = AppController(
     view_root="views",
