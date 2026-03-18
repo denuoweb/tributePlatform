@@ -40,7 +40,12 @@ function App() {
           {renderSection()}
         </div>
         <footer style={{ marginTop: '20px', textAlign: 'center', padding: '10px 0' }}>
-          Made using Python and React using <a href="https://github.com/piercefreeman/mountaineer" target="_blank" rel="noopener noreferrer">Mountaineer</a> 🏔️
+          <div>
+            Made using Python and React using <a href="https://github.com/piercefreeman/mountaineer" target="_blank" rel="noopener noreferrer">Mountaineer</a> 🏔️
+          </div>
+          <div style={{ marginTop: '8px' }}>
+            Maintained by Denuo Web LLC. <a href="https://github.com/Denuo-Web/NaotoTributePlatform" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="mailto:info@denuoweb.com">info@denuoweb.com</a>
+          </div>
         </footer>
       </MusicPlayerProvider>
     </div>
