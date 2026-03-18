@@ -1,6 +1,7 @@
 {
     "name": "tributeplatform_views",
     "version": "1.0.0",
+    "homepage": ".",
     "description": "Frontend for the Mountaineer SPA tribute website",
     "main": "index.js",
     "scripts": {

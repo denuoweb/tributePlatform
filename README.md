@@ -57,6 +57,17 @@ npm start
 
 This command starts the frontend development server, typically on `http://localhost:3000`, and should open your default web browser automatically.
 
+## GitHub Pages Deployment
+
+This repo is configured to deploy the static React frontend in `views/` to GitHub Pages through GitHub Actions.
+
+1. Push this branch to `master` on GitHub.
+2. In the GitHub repo, open `Settings` -> `Pages`.
+3. Under `Source`, select `GitHub Actions`.
+4. Wait for the `Deploy GitHub Pages` workflow to finish.
+
+After the workflow completes, the site will be published at `https://denuoweb.github.io/tributePlatform/`.
+
 ## Navigating the Application
 
 The application's main sections are accessible from the homepage. Interact with the music controls to play, pause, or change the music, and navigate between the Home, Art, Dedication, and Login sections to explore content.

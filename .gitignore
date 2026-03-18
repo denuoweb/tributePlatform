@@ -23,6 +23,7 @@ views/public/music/
 
 # Build output
 /dist
+views/build/
 
 # Specific files that might contain sensitive information or user-specific content
 *.log
@@ -134,3 +135,7 @@ views/public/music/
 views/_static/*
 views/node_modules/*
 views/package-lock.json
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+!views/package-lock.json

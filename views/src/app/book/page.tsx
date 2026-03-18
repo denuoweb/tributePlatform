@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Book = () => {
+  const publicUrl = process.env.PUBLIC_URL || '';
+
   return (
     <div className="book-container">
       <h1 className="book-title">Book by Naoto</h1>
@@ -13,8 +15,8 @@ const Book = () => {
         The joys, adventures, creative expression swirl with conflict and clashes with evil demons until Halong and Greysmoke merge in a magical way. It is then that Mi-Lien and the kids come to the understanding that schoolwork and knowledge serve to give her dreams and creative endeavors ever more significance and meaning. Most of the writing and illustrations were done while wandering through Vietnam, Cambodia, Laos, Southwest China and while living and working in Thailand. Some were started simply as travel sketches and later modified for the book. Further rewriting and a few more drawings were done in the States. The best ones in my mind were done in collaboration with my then six year old nephew Evan. He was the primary artist for the illustrations titled: Ogre Cave, Poison Cloud Demon and Halong Sleeping Under the Sea. I gave Evan only vague instructions to draw an ogre in a cave, a foggy demon in the sky that eats trees and plants on the ground and a dragon sleeping on the bottom of the sea with craggy mountains with trees poking out. As Evan produced masterful work I only had to add a bit of texture and a few refinements.    
       </p>
       <div className="book-images">
-        <img src="/images/MiLienOgreCave.jpg" alt="Mi Lien Creates Dreams from Junk" className="book-image" />
-        <img src="/images/MiLiensDreams.jpg" alt="Ogre Cave" className="book-image" />
+        <img src={`${publicUrl}/images/MiLienOgreCave.jpg`} alt="Mi Lien Creates Dreams from Junk" className="book-image" />
+        <img src={`${publicUrl}/images/MiLiensDreams.jpg`} alt="Ogre Cave" className="book-image" />
       </div>
     </div>
   );
